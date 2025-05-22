@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Joody Pet Store</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="Jood.css" />
+  <script src="Jood.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Happy Paws Pet Store</h1>
+    <p>Your one-stop shop for furry friends and supplies!</p>
+  </header>
+
+  <div class="welcome-typewriter">
+    <h2 id="welcomeText"></h2>
+  </div>
+
+  <div class="menu">
+    <img src="cat2.png" alt="Joody pet store logo"> 
+  </div>
+
+  <p id="offer-message">Don't miss our 20% offer!</p>
+  <button onclick="here()">Click to get!</button>
+
+  <button class="icon" onclick="toggleMenu()">☰ Menu</button>
+<nav id="navbar">
+  <a href="#home">Home</a>
+  <a href="#pets">Pets</a>
+  <a href="#supplies">Supplies</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+
+  <main id="home">
+    <img src="cat1.jpg" class="ad-image" alt="ad">
+
+    <section class="table-section">
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Description</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Dog Food - Premium Blend</td><td>Nutritious food for all dog breeds</td><td>$25</td></tr>
+          <tr><td>Cat Toys Pack</td><td>10 fun and interactive toys for cats</td><td>$15</td></tr>
+          <tr><td>Bird Cage - Medium Size</td><td>Comfortable cage with perches</td><td>$40</td></tr>
+          <tr><td>Fish Tank Starter Kit</td><td>Filter, light, water conditioner included</td><td>$60</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="pet-category" id="pets">
+      <h2>Available Pets</h2>
+      <div class="product"><h3>Golden Retriever Puppy</h3><p>Friendly, playful, and great with kids.</p></div>
+      <div class="product"><h3>Persian Cat</h3><p>Elegant, calm, and cuddly companion.</p></div>
+      <div class="product"><h3>Parrot (African Grey)</h3><p>Intelligent and talkative.</p></div>
+      <div class="product"><h3>Hamster</h3><p>Small, active, and easy to care for.</p></div>
+      <div class="product"><h3>Rabbit</h3><p>Soft, adorable, and gentle.</p></div>
+      <div class="product"><h3>Siamese Cat</h3><p>Vocal and affectionate with a sleek body.</p></div>
+      <div class="product"><h3>Turtle</h3><p>Quiet and low-maintenance pet.</p></div>
+      <div class="product"><h3>Betta Fish</h3><p>Colorful and ideal for small tanks.</p></div>
+    </section>
+
+    <section class="pet-category" id="supplies">
+      <h2>Pet Supplies</h2>
+      <div class="product"><h3>Pet Shampoo</h3><p>Gentle Aloe Vera formula for pets.</p></div>
+      <div class="product"><h3>Cat Toys Pack</h3><p>10 interactive toys for cats.</p></div>
+      <div class="product"><h3>Bird Cage</h3><p>With perches and feeding cups.</p></div>
+      <div class="product"><h3>Hamster Wheel</h3><p>Quiet and safe wheel.</p></div>
+      <div class="product"><h3>Flea & Tick Spray</h3><p>Protects against pests.</p></div>
+      <div class="product"><h3>Fish Tank Kit</h3><p>Includes filter, light, conditioner.</p></div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>&copy; 2025 Happy Paws Pet Store | Contact: info@happypaws.com</p>
+  </footer>
+
+</body>
+</html>

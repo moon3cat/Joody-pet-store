@@ -1,0 +1,122 @@
+/* General Reset */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  text-align: center; /* يجعل المحتوى كله في المنتصف */
+}
+
+header {
+  background-color: #f0f4f8;
+  padding: 20px;
+  border-bottom: 2px solid #ccc;
+}
+
+h1, h2 {
+  color: rgb(26, 26, 95);
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 10px;
+  background-color: #eee;
+  overflow: hidden;
+  max-height: none;
+  opacity: 1;
+  pointer-events: auto;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Menu icon button */
+.icon {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .icon {
+    display: block;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  nav.responsive {
+    max-height: 500px; /* كافي لعرض كل الروابط */
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+/* Images */
+.menu img {
+  max-width: 200px;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+
+img.ad-image {
+  max-width: 60%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+
+/* Table */
+.table-section table {
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.table-section th {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px;
+}
+
+.table-section td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Products */
+.pet-category {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.product {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px auto;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  max-width: 400px;
+}
